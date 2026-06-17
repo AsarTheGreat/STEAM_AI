@@ -1,0 +1,28 @@
+Something mysterious has happened at the Brightstone Museum!
+
+Early this morning, the staff discovered that the Ancient Star Artifact had fallen out of its display case at 3:15 PM yesterday. The crash was heard, but no one saw what happened. The museum director has called on YOU, the Junior Detective Team, to solve this case!
+
+Your mission is to ask questions and follow the clues to figure out what really happened to the artifact.
+
+Here's what we know so far:
+- The artifact was safe at 3:00 PM during a school field trip.
+- A loud crash happened at 3:15 PM in the Ancient History Hall.
+- Someone or something knocked it over.
+- Strange evidence was found at the scene.
+
+To begin your investigation, start with this question:
+
+    What happened at 3:15 PM?
+
+This will give you the first clue. Then keep asking questions based on what you discover. Look for connections between the timeline, evidence, suspects, and locations.
+
+Ask about things like:
+- Clues and evidence
+- Paw prints
+- Suspicious suspects
+- Timeline details
+- What animals could be involved
+
+Follow the trail of clues, and you'll discover the truth!
+
+Good luck, Junior Detective. The museum is counting on you.

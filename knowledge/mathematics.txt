@@ -1,0 +1,12 @@
+- The concept of zero was invented in India and revolutionized arithmetic.
+- The Fibonacci sequence appears in flowers, shells, and spiral galaxies.
+- Prime numbers are the building blocks of cryptography and secure online communication.
+- A mathematical proof shows why a statement is always true, no matter the case.
+- Probability and statistics help us understand risk, experiments, and real-world data.
+- Algebra uses letters and symbols to solve puzzles with unknown numbers.
+- Geometry studies shapes, angles, and space to help build houses, bridges, and art.
+- Calculus looks at change and motion, and engineers use it to design faster cars and safer planes.
+- Number theory explores patterns in numbers and helps make codes that protect information.
+- Logic and set theory help computers think clearly and organize information.
+- Trigonometry uses triangles to measure heights, map the Earth, and send signals.
+- Math is used in music, sports, medicine, and computer games to solve problems every day.

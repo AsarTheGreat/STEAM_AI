@@ -1,0 +1,15 @@
+- The first electronic digital computers filled entire rooms and weighed tons.
+- More than 6 billion people now use mobile phones worldwide.
+- Encryption keeps online data safe using very large prime numbers.
+- 3D printing can build prototypes, medical implants, and even houses.
+- Open-source communities help share code and accelerate innovation across industries.
+- The internet began as ARPANET in the late 1960s and grew into the global network we use today.
+- Tim Berners-Lee is credited with inventing the World Wide Web in 1989.
+- Alan Turing helped create the foundations of modern computing and cracked codes during World War II.
+- Bill Gates and Paul Allen created Microsoft and helped bring Windows to millions of computers.
+- Steve Jobs, Steve Wozniak, and Ronald Wayne built the first Apple computer in a garage in 1976.
+- IBM introduced the first personal computer in 1981, helping computers become common in homes and offices.
+- The first mouse was invented by Douglas Engelbart in 1964, making computers easier to use.
+- Artificial intelligence and machine learning are growing fields that help computers learn from data.
+- Renewable energy and clean tech are becoming more important as technology works to protect the planet.
+- Programming and coding are the same. It just how to talk to computers.

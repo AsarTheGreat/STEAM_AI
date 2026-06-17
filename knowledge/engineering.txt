@@ -1,0 +1,13 @@
+- The Great Pyramid of Giza was built with engineering techniques that still amaze modern scholars.
+- Engineers design bridges, spacecraft, medical devices, circuits, and software systems.
+- Civil engineers use materials like concrete, steel, and composites to handle loads and weather.
+- Software engineers use version control, testing, and agile planning to deliver working applications.
+- Engineering often requires creative problem-solving under real-world constraints.
+- Mechanical engineers design engines, robots, and machines that turn energy into movement.
+- Electrical engineers work with circuits, batteries, motors, and the flow of electricity.
+- Civil engineers build roads, dams, tunnels, and skyscrapers to keep people safe and connected.
+- There are many types of engineers, like mechanical, electrical, civil, software, aerospace, environmental, biomedical, and industrial engineers.
+- Aerospace engineers design airplanes, rockets, satellites, and spacecraft for flight.
+- Environmental engineers help keep water clean, reduce pollution, and protect natural systems.
+- Biomedical engineers create devices like prosthetic limbs, imaging machines, and wearable sensors.
+- Industrial engineers improve how factories, hospitals, and schools use people, machines, and time.
