@@ -28,4 +28,4 @@ ENTRYPOINT []
 
 # Start Ollama, then only pull the model if it's not already present, then
 # run the Python app.
-CMD ["bash", "-c", "ollama serve & until ollama list >/dev/null 2>&1; do echo 'Waiting for Ollama to start...'; sleep 1; done; if ! ollama list | grep -q '^llama3'; then echo 'Pulling llama3 model...'; ollama pull llama3; fi; echo 'Starting application...'; python main.py"]
+CMD ["bash", "-c", "ollama serve > /dev/null 2>&1 & until ollama list >/dev/null 2>&1; do echo 'Waiting for Ollama to start...'; sleep 1; done; if ! ollama list | grep -q '^llama3'; then echo 'Pulling llama3 model...'; ollama pull llama3 >/dev/null 2>&1 || true; fi; echo 'Starting application...'; python main.py"]
