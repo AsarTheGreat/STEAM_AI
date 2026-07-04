@@ -323,6 +323,7 @@ def print_help():
     print("  read <filename> - Read the contents of a specific knowledge file");
     print("  reload - Reload all knowledge files from disk");
     print("  study - Load STEAM_Study_Buddy");
+    print("  back - Exit study mode and return to the default prompt");
     print("Any other input will be treated as a question to answer based on the knowledge files.");
 
 
@@ -375,7 +376,16 @@ def main():
         if user_input.lower() == "study":
             assistant_name = "STEAM_Study_Buddy"
             use_ollama = True
-            print(Fore.CYAN + "Study mode enabled. All following queries will be sent to Ollama.")
+            print(Fore.CYAN + "Study mode enabled. All following queries will be sent to Ollama. Type 'back' to return to the default prompt. ")
+            continue;
+
+        if user_input.lower() == "back":
+            if use_ollama:
+                use_ollama = False
+                assistant_name = "STEAM_AI"
+                print(Fore.CYAN + "Study mode disabled. Returning to the default prompt.")
+            else:
+                print(Fore.YELLOW + "You are not currently in study mode.")
             continue;
 
         if use_ollama:
