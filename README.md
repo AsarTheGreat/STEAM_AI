@@ -34,22 +34,46 @@ STEAM AI provides two modes of interaction:
 
 ## Quick Start
 
+### Option 1: Automated Setup (Recommended for Windows users)
+
+**For Local Development:**
+```powershell
+.\local-setup.ps1
+```
+This script automates the entire local setup process.
+
+**For Docker:**
+```powershell
+.\docker-setup.ps1
+```
+This script builds the image, creates the volume, and runs the container. It will ask whether you want interactive or detached mode.
+
+### Option 2: Manual Setup
+
 ### Build the Docker Image
 
 ```bash
 docker build --no-cache --pull -t steam_ai .
 ```
 
+### Create a Docker Volume (one-time setup)
+
+Create a named volume to persist Ollama models between container runs:
+
+```bash
+docker volume create ollama_data
+```
+
 ### Run the Container
 
 **Interactive mode** (for testing):
 ```bash
-docker run --rm -it -p 11434:11434 steam_ai
+docker run --rm -it -p 11434:11434 -v ollama_data:/root/.ollama steam_ai
 ```
 
 **Detached mode** (background):
 ```bash
-docker run -d --name steam_ai -p 11434:11434 steam_ai
+docker run -d --name steam_ai -p 11434:11434 -v ollama_data:/root/.ollama steam_ai
 ```
 
 ### Using the Application
@@ -107,12 +131,24 @@ Edit or add files to customize the knowledge base.
 
 1. Ollama server starts in the background
 2. The container waits for Ollama to be ready
-3. If `llama3` model is not present, it is pulled
+3. If `llama3` model is not present in the volume, it is pulled (first run only)
 4. The Python application starts and displays the prompt
+
+**Note**: On the first run, the model will be downloaded (~4.7 GB). This is saved in the `ollama_data` volume and reused on subsequent runs, so you only wait once.
 
 ## Local Development
 
-### Setup Virtual Environment
+### Automated Setup (Windows)
+
+```powershell
+.\local-setup.ps1
+```
+
+This script handles all setup steps automatically: sets execution policy, creates virtual environment, installs dependencies, and starts the application.
+
+### Manual Setup
+
+#### macOS / Linux
 
 ```bash
 python3 -m venv venv
@@ -120,13 +156,35 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+#### Windows
+
+1. **Set the execution policy** (run PowerShell as Administrator):
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   ```
+
+2. **Create virtual environment**:
+   ```powershell
+   python -m venv venv
+   ```
+
+3. **Activate virtual environment**:
+   ```powershell
+   .\venv\Scripts\Activate.ps1
+   ```
+
+4. **Install dependencies**:
+   ```powershell
+   pip install -r requirements.txt
+   ```
+
 ### Run Locally
 
 ```bash
 python main.py
 ```
 
-**Note**: Study Mode requires Ollama running locally on `http://localhost:11434`.
+**Note**: Study Mode requires Ollama running locally on `http://localhost:11434`. On Windows, download Ollama from [ollama.ai](https://ollama.ai) and run it as a service.
 
 ## Dependencies
 
